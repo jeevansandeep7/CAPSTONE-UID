@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAVORY SEASONS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(peakpx.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: rgba(9, 13, 16, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .navbar ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li a button {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .navbar ul li a button:hover {
+            background-color: rgba(255, 194, 10, 0.8);
+        }
+
+        .info-box {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            margin-top: 200px;
+            margin-bottom: 80px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .specialties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px 10px;
+            gap: 20px;
+        }
+
+        .special-item {
+            width: 280px;
+        }
+
+        .special-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .special-item img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgba(9, 13, 16, 0.9);
+            color: white;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            padding: 12px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: flex-start;
+            }
+
+            .navbar ul li a button {
+                width: 100%;
+            }
+
+            .info-box {
+                margin-top: 180px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 100px;
+            }
+
+            .info-box h2 {
+                font-size: 22px;
+            }
+
+            .info-box p {
+                font-size: 16px;
+            }
+
+            .special-item {
+                width: 100%;
+            }
+
+            .specialties {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo2.png" class="logo" alt="Savory Seasons Logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="capstone.html"><button>Home</button></a></li>
+                <li><a href="menu2.html"><button>Menu</button></a></li>
+                <li><a href="reservations.html"><button>Reserve a Table</button></a></li>
+                <li><a href="contact.html"><button>About us</button></a></li>
+                <li><a href="login.html"><button>Login</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="info-box">
+        <h2>Welcome to Savory Seasons</h2>
+        <p>Experience the best seasonal dishes crafted with fresh ingredients. Whether you're here for a casual meal or a fine dining experience, we bring you flavors to remember.</p>
+    </div>
+    
+    <section class="specialties">
+        <div class="special-item">
+            <img src="pizza.jpg" alt="Wood-Fired Pizza">
+            <h3>Wood-Fired Pizza</h3>
+            <p>Made with fresh ingredients and baked in a traditional oven.</p>
+        </div>
+        <div class="special-item">
+            <img src="sushi.jpg" alt="Fresh Sushi Rolls">
+            <h3>Fresh Sushi Rolls</h3>
+            <p>Delicate sushi crafted with premium fish and perfect rice.</p>
+        </div>
+        <div class="special-item">
+            <img src="steak.jpg" alt="Signature Steaks">
+            <h3>Signature Steaks</h3>
+            <p>Grilled to perfection with a blend of secret spices.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Savory Seasons. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
