@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Our Menu</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('back3.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            margin-top: 15%;
+            margin-bottom: 5%;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 20px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .menu-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .menu-item div {
+            text-align: left;
+            color: white;
+            max-width: 500px;
+            margin-left: 40px;
+        }
+
+        .menu-item h3 {
+            color: red;
+        }
+
+        .menu-item p {
+            margin: 5px 0;
+            color: white;
+        }
+
+        .menu-item strong {
+            color: red;
+        }
+
+        .add-to-cart {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        .add-to-cart:hover {
+            background-color: #cc0000;
+        }
+
+        .cart-message {
+            color: lightgreen;
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: rgba(9, 13, 16, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            margin-bottom: 100%;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar ul li {
+            display: flex;
+        }
+
+        .navbar ul li a button {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .navbar ul li a button:hover {
+            background-color: rgba(255, 194, 10, 0.8);
+        }
+
+        .cart-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .cart-btn:hover {
+            color: rgba(255, 194, 10, 0.8);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo2.png" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="file:///C:/Users/jeeva/OneDrive/Desktop/capstone/capstone.html"><button>Home</button></a></li>
+                <li><a href="file:///C:/Users/jeeva/OneDrive/Desktop/capstone/menu2.html"><button>Menu</button></a></li>
+                <li><a href="reservations.html"><button>Reserve a Table</button></a></li>
+                <li><a href="contact.html"><button>About us</button></a></li>
+                <li><a href="login.html"><button>login</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="menu">Our Menu</h1>
+
+    <div class="menu-item">
+        <img src="dish1.jpg" alt="Chicken Biriyani">
+        <div>
+            <h3>CHICKEN BIRIYANI</h3>
+            <p>Authentic Indian style biryani with tender chicken, fragrant spices, and rice.</p>
+            <p><strong>300/-</strong></p>
+            <button class="add-to-cart">ORDER NOW</button>
+            <p class="cart-message"></p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="dish2.jpg" alt="Mutton Biriyani">
+        <div>
+            <h3>MUTTON BIRIYANI</h3>
+            <p>Tastes like heaven.</p>
+            <p><strong>360/-</strong></p>
+            <button class="add-to-cart">ORDER NOW</button>
+            <p class="cart-message"></p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="dish3.jpg" alt="Egg Fried Rice">
+        <div>
+            <h3>EGG FRIED RICE</h3>
+            <p>A popular dish featuring cooked rice stir-fried with scrambled eggs, vegetables, and soy sauce.</p>
+            <p><strong>140/-</strong></p>
+            <button class="add-to-cart">ORDER NOW</button>
+            <p class="cart-message"></p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="dish4.jpg" alt="Chicken 65">
+        <div>
+            <h3>CHICKEN 65</h3>
+            <p>A spicy South Indian deep-fried chicken appetizer from Chennai, crispy and flavorful.</p>
+            <p><strong>200/-</strong></p>
+            <button class="add-to-cart">ORDER NOW</button>
+            <p class="cart-message"></p>
+        </div>
+    </div>
+
+    <div class="menu-item">
+        <img src="dish5.jpg" alt="Combo Pack Small">
+        <div>
+            <h3>COMBO PACK SMALL</h3>
+            <p>Flavorful chicken biryani with tender chicken, aromatic spices, and fluffy basmati rice.</p>
+            <p><strong>540/-</strong></p>
+            <button class="add-to-cart">ORDER NOW</button>
+            <p class="cart-message"></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".add-to-cart");
+    
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    alert("✅ Your order has been placed successfully!");
+                    const message = this.nextElementSibling;
+                   
+                    
+                    setTimeout(() => {
+                        message.textContent = "";
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
